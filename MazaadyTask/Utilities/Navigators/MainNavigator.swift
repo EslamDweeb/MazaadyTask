@@ -16,6 +16,7 @@ class MainNavigator:Navigator{
         case splash
         case main
         case home
+        case form
     }
     
     required init(coordinator: Coordinator) {
@@ -31,6 +32,9 @@ class MainNavigator:Navigator{
         case .home:
             let viewModel = HomeViewModel()
             return HomeVC(viewModel: viewModel, coordinator: coordinator)
+        case .form:
+            let viewModel = FormViewModel()
+            return FormVC(viewModel: viewModel, coordinator: coordinator)
         }
     }
 }

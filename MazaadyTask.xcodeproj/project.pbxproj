@@ -58,6 +58,15 @@
 		C3930FCC2B5582B300B018EF /* UpComingCousesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FCB2B5582B300B018EF /* UpComingCousesCell.swift */; };
 		C3930FCF2B5582FB00B018EF /* UPcomingCoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FCD2B5582FB00B018EF /* UPcomingCoursesVC.swift */; };
 		C3930FD02B5582FB00B018EF /* UPcomingCoursesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FCE2B5582FB00B018EF /* UPcomingCoursesVC.xib */; };
+		C3930FD32B55AB1C00B018EF /* iOSDropDown in Frameworks */ = {isa = PBXBuildFile; productRef = C3930FD22B55AB1C00B018EF /* iOSDropDown */; };
+		C3930FD72B55AC0700B018EF /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FD52B55AC0700B018EF /* FormVC.swift */; };
+		C3930FD82B55AC0700B018EF /* FormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FD62B55AC0700B018EF /* FormVC.xib */; };
+		C3930FDA2B55B0FA00B018EF /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FD92B55B0FA00B018EF /* Form.swift */; };
+		C3930FDC2B55B52000B018EF /* FormViewModeL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FDB2B55B52000B018EF /* FormViewModeL.swift */; };
+		C3930FDE2B55C2FF00B018EF /* CustomPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FDD2B55C2FF00B018EF /* CustomPropertyView.swift */; };
+		C3930FE02B55CE0500B018EF /* CrousalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FDF2B55CE0500B018EF /* CrousalLayout.swift */; };
+		C3930FE42B55CE5600B018EF /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FE22B55CE5600B018EF /* CourseCell.swift */; };
+		C3930FE52B55CE5600B018EF /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FE32B55CE5600B018EF /* CourseCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +125,14 @@
 		C3930FCB2B5582B300B018EF /* UpComingCousesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingCousesCell.swift; sourceTree = "<group>"; };
 		C3930FCD2B5582FB00B018EF /* UPcomingCoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPcomingCoursesVC.swift; sourceTree = "<group>"; };
 		C3930FCE2B5582FB00B018EF /* UPcomingCoursesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UPcomingCoursesVC.xib; sourceTree = "<group>"; };
+		C3930FD52B55AC0700B018EF /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
+		C3930FD62B55AC0700B018EF /* FormVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormVC.xib; sourceTree = "<group>"; };
+		C3930FD92B55B0FA00B018EF /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		C3930FDB2B55B52000B018EF /* FormViewModeL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModeL.swift; sourceTree = "<group>"; };
+		C3930FDD2B55C2FF00B018EF /* CustomPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPropertyView.swift; sourceTree = "<group>"; };
+		C3930FDF2B55CE0500B018EF /* CrousalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrousalLayout.swift; sourceTree = "<group>"; };
+		C3930FE22B55CE5600B018EF /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		C3930FE32B55CE5600B018EF /* CourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +143,7 @@
 				C3930F9E2B5550F800B018EF /* RxSwift in Frameworks */,
 				C3930F9C2B5550F800B018EF /* RxCocoa in Frameworks */,
 				C3930F992B5550BF00B018EF /* MBProgressHUD in Frameworks */,
+				C3930FD32B55AB1C00B018EF /* iOSDropDown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +255,7 @@
 		C3930F4C2B5542D700B018EF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C3930FD42B55ABF000B018EF /* Form */,
 				C3930F9F2B5551C400B018EF /* Home */,
 				C3930F912B55439400B018EF /* Main */,
 				C3930F4D2B5542D700B018EF /* Splash */,
@@ -274,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				C3930F542B5542D800B018EF /* Login.swift */,
+				C3930FD92B55B0FA00B018EF /* Form.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -383,6 +403,8 @@
 			children = (
 				C3930F932B55470300B018EF /* LinearIndecatorTabBar.swift */,
 				C3930FB22B556E9C00B018EF /* LiveView.swift */,
+				C3930FDD2B55C2FF00B018EF /* CustomPropertyView.swift */,
+				C3930FDF2B55CE0500B018EF /* CrousalLayout.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -391,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				C3930FBF2B55740000B018EF /* Cell */,
+				C3930FE12B55CE3000B018EF /* CourseSection */,
 				C3930FC62B55807100B018EF /* UpcomingSection */,
 				C3930FB42B556F5300B018EF /* LiveSection */,
 				C3930FA02B5551D600B018EF /* HomeVC.swift */,
@@ -433,6 +456,25 @@
 			path = UpcomingSection;
 			sourceTree = "<group>";
 		};
+		C3930FD42B55ABF000B018EF /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				C3930FD52B55AC0700B018EF /* FormVC.swift */,
+				C3930FD62B55AC0700B018EF /* FormVC.xib */,
+				C3930FDB2B55B52000B018EF /* FormViewModeL.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		C3930FE12B55CE3000B018EF /* CourseSection */ = {
+			isa = PBXGroup;
+			children = (
+				C3930FE22B55CE5600B018EF /* CourseCell.swift */,
+				C3930FE32B55CE5600B018EF /* CourseCell.xib */,
+			);
+			path = CourseSection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -453,6 +495,7 @@
 				C3930F982B5550BF00B018EF /* MBProgressHUD */,
 				C3930F9B2B5550F800B018EF /* RxCocoa */,
 				C3930F9D2B5550F800B018EF /* RxSwift */,
+				C3930FD22B55AB1C00B018EF /* iOSDropDown */,
 			);
 			productName = MazaadyTask;
 			productReference = C3930F202B552E8200B018EF /* MazaadyTask.app */;
@@ -485,6 +528,7 @@
 			packageReferences = (
 				C3930F972B5550BF00B018EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				C3930F9A2B5550F800B018EF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C3930FD12B55AB1C00B018EF /* XCRemoteSwiftPackageReference "iOSDropDown" */,
 			);
 			productRefGroup = C3930F212B552E8200B018EF /* Products */;
 			projectDirPath = "";
@@ -502,10 +546,12 @@
 			files = (
 				C3930F7E2B5542D800B018EF /* SplashVC.xib in Resources */,
 				C3930FD02B5582FB00B018EF /* UPcomingCoursesVC.xib in Resources */,
+				C3930FD82B55AC0700B018EF /* FormVC.xib in Resources */,
 				C3930F302B552E8400B018EF /* LaunchScreen.storyboard in Resources */,
 				C3930FA32B5551D600B018EF /* HomeVC.xib in Resources */,
 				C3930F2D2B552E8400B018EF /* Assets.xcassets in Resources */,
 				C3930FBE2B55722600B018EF /* LiveSectionVC.xib in Resources */,
+				C3930FE52B55CE5600B018EF /* CourseCell.xib in Resources */,
 				C3930FB82B556F7700B018EF /* LiveCell.xib in Resources */,
 				C3930FC52B557A9300B018EF /* UpcomingCourses.xib in Resources */,
 				C3930FCA2B5580C600B018EF /* CourseCat.xib in Resources */,
@@ -519,11 +565,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3930FDA2B55B0FA00B018EF /* Form.swift in Sources */,
 				C3930F732B5542D800B018EF /* UIviewController_Ext.swift in Sources */,
 				C3930F962B5547DA00B018EF /* MainTabBarVC.swift in Sources */,
 				C3930F722B5542D800B018EF /* UIImage_Ext.swift in Sources */,
 				C3930FCC2B5582B300B018EF /* UpComingCousesCell.swift in Sources */,
 				C3930F842B5542D800B018EF /* MainNavigator.swift in Sources */,
+				C3930FDE2B55C2FF00B018EF /* CustomPropertyView.swift in Sources */,
 				C3930FC92B5580C600B018EF /* CourseCat.swift in Sources */,
 				C3930FB72B556F7700B018EF /* LiveCell.swift in Sources */,
 				C3930F792B5542D800B018EF /* HTTPClient.swift in Sources */,
@@ -538,7 +586,9 @@
 				C3930F892B5542D800B018EF /* Fonts.swift in Sources */,
 				C3930F242B552E8200B018EF /* AppDelegate.swift in Sources */,
 				C3930FBD2B55722600B018EF /* LiveSectionVC.swift in Sources */,
+				C3930FE02B55CE0500B018EF /* CrousalLayout.swift in Sources */,
 				C3930F7C2B5542D800B018EF /* NetworkError.swift in Sources */,
+				C3930FD72B55AC0700B018EF /* FormVC.swift in Sources */,
 				C3930FC42B557A9300B018EF /* UpcomingCourses.swift in Sources */,
 				C3930F7B2B5542D800B018EF /* BaseRouter.swift in Sources */,
 				C3930FC12B55740F00B018EF /* LiveSectionCell.swift in Sources */,
@@ -554,9 +604,11 @@
 				C3930F7F2B5542D800B018EF /* AuthRepo.swift in Sources */,
 				C3930F802B5542D800B018EF /* Login.swift in Sources */,
 				C3930F6F2B5542D800B018EF /* UITextField_ext.swift in Sources */,
+				C3930FE42B55CE5600B018EF /* CourseCell.swift in Sources */,
 				C3930F812B5542D800B018EF /* KeyChainHelper.swift in Sources */,
 				C3930F742B5542D800B018EF /* UIView_Ext.swift in Sources */,
 				C3930FA52B5551E500B018EF /* HomeViewModel.swift in Sources */,
+				C3930FDC2B55B52000B018EF /* FormViewModeL.swift in Sources */,
 				C3930F942B55470300B018EF /* LinearIndecatorTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -783,6 +835,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		C3930FD12B55AB1C00B018EF /* XCRemoteSwiftPackageReference "iOSDropDown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jriosdev/iOSDropDown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -800,6 +860,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3930F9A2B5550F800B018EF /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		C3930FD22B55AB1C00B018EF /* iOSDropDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3930FD12B55AB1C00B018EF /* XCRemoteSwiftPackageReference "iOSDropDown" */;
+			productName = iOSDropDown;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

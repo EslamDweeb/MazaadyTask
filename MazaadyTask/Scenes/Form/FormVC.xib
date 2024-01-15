@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormVC" customModule="MazaadyTask" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryTxt" destination="CK6-lh-LhA" id="Ygo-2g-Wia"/>
+                <outlet property="mainStack" destination="YEy-UV-bgi" id="rf6-Xk-yNp"/>
+                <outlet property="processTypeTxt" destination="ow1-0e-rv1" id="sAO-Oa-tRN"/>
+                <outlet property="specifyProcessTxt" destination="HaQ-d2-khl" id="vrM-Jl-lZ0"/>
+                <outlet property="subCategoryTxt" destination="Zu4-wC-cEK" id="qJG-T7-Pod"/>
+                <outlet property="submitBtn" destination="7U3-3s-gtj" id="qBl-9g-abF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVU-DM-DUH">
+                    <rect key="frame" x="173.66666666666666" y="64.666666666666671" width="45.666666666666657" height="24"/>
+                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                    <color key="textColor" name="Gray 1"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m92-gf-nbt">
+                    <rect key="frame" x="19.999999999999996" y="59" width="39.666666666666657" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="kJp-31-ro6"/>
+                    </constraints>
+                    <color key="tintColor" name="Primary"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YEy-UV-bgi">
+                    <rect key="frame" x="20" y="108.66666666666669" width="353" height="164"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CK6-lh-LhA" customClass="JRDropDown">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="g5Y-yH-Sep"/>
+                            </constraints>
+                            <color key="textColor" name="Gray 1"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Gray 3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Subcategory" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-wC-cEK" customClass="JRDropDown">
+                            <rect key="frame" x="0.0" y="64.999999999999986" width="353" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="QyZ-Ka-1G4"/>
+                            </constraints>
+                            <color key="textColor" name="Gray 1"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Gray 3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="K3s-Ci-OuH">
+                            <rect key="frame" x="0.0" y="130" width="353" height="34"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Process Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ow1-0e-rv1" customClass="JRDropDown">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                    <color key="textColor" name="Gray 1"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="Gray 3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Specify here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-d2-khl">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U3-3s-gtj">
+                    <rect key="frame" x="20" y="292.66666666666669" width="353" height="45"/>
+                    <color key="backgroundColor" name="Primary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="z98-5J-Bs1"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Submit">
+                        <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hVU-DM-DUH" firstAttribute="centerY" secondItem="m92-gf-nbt" secondAttribute="centerY" id="Avc-SJ-Nyn"/>
+                <constraint firstItem="7U3-3s-gtj" firstAttribute="top" secondItem="YEy-UV-bgi" secondAttribute="bottom" constant="20" id="E8E-b9-nIn"/>
+                <constraint firstItem="YEy-UV-bgi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FVQ-uT-tnO"/>
+                <constraint firstItem="YEy-UV-bgi" firstAttribute="top" secondItem="hVU-DM-DUH" secondAttribute="bottom" constant="20" id="Ir0-86-EOA"/>
+                <constraint firstItem="hVU-DM-DUH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IvQ-i6-mYa"/>
+                <constraint firstItem="7U3-3s-gtj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MxG-b9-RXG"/>
+                <constraint firstItem="m92-gf-nbt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SD7-ak-kZL"/>
+                <constraint firstItem="m92-gf-nbt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="T8F-mH-pVm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7U3-3s-gtj" secondAttribute="trailing" constant="20" id="b4p-qS-uwN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YEy-UV-bgi" secondAttribute="trailing" constant="20" id="g4G-Kj-Xnm"/>
+            </constraints>
+            <point key="canvasLocation" x="-30" y="20"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Zu4-wC-cEK">
+            <size key="intrinsicContentSize" width="165.66666666666666" height="34"/>
+        </designable>
+        <designable name="ow1-0e-rv1">
+            <size key="intrinsicContentSize" width="120.66666666666667" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <namedColor name="Gray 1">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray 3">
+            <color red="0.61568627450980395" green="0.62352941176470589" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.92549019607843142" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="MazaadyTask" customModuleProvider="target">
             <connections>
                 <outlet property="mainCollectionView" destination="tt5-2I-jsO" id="Pda-5a-0Qv"/>
+                <outlet property="notificationBnt" destination="JuT-mf-iPT" id="BSs-nO-sEb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

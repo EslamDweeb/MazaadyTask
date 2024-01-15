@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: BaseWireFrame<HomeViewModel> {
 
+    @IBOutlet weak var notificationBnt: UIButton!
     @IBOutlet weak var mainCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,11 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
     }
     override func bind(viewModel: HomeViewModel) {
         print("Home")
+        notificationBnt.rx.tap.subscribe {[weak self] _ in
+            guard let self else{return}
+            // Button action
+            self.coordinator.main.navigate(to: .form)
+        }.disposed(by: disposeBag)
     }
     private func setupMainCollectionView(){
         mainCollectionView.register(LiveSectionCell.self, forCellWithReuseIdentifier: LiveSectionCell.getIdentifier())
