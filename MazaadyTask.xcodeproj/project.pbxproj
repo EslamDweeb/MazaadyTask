@@ -45,6 +45,12 @@
 		C3930FA22B5551D600B018EF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FA02B5551D600B018EF /* HomeVC.swift */; };
 		C3930FA32B5551D600B018EF /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FA12B5551D600B018EF /* HomeVC.xib */; };
 		C3930FA52B5551E500B018EF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FA42B5551E500B018EF /* HomeViewModel.swift */; };
+		C3930FB32B556E9C00B018EF /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FB22B556E9C00B018EF /* LiveView.swift */; };
+		C3930FB72B556F7700B018EF /* LiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FB52B556F7700B018EF /* LiveCell.swift */; };
+		C3930FB82B556F7700B018EF /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FB62B556F7700B018EF /* LiveCell.xib */; };
+		C3930FBD2B55722600B018EF /* LiveSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FBB2B55722600B018EF /* LiveSectionVC.swift */; };
+		C3930FBE2B55722600B018EF /* LiveSectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FBC2B55722600B018EF /* LiveSectionVC.xib */; };
+		C3930FC12B55740F00B018EF /* LiveSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FC02B55740F00B018EF /* LiveSectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +96,12 @@
 		C3930FAE2B5566DC00B018EF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		C3930FAF2B5566DC00B018EF /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		C3930FB12B5566DD00B018EF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		C3930FB22B556E9C00B018EF /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		C3930FB52B556F7700B018EF /* LiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCell.swift; sourceTree = "<group>"; };
+		C3930FB62B556F7700B018EF /* LiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
+		C3930FBB2B55722600B018EF /* LiveSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSectionVC.swift; sourceTree = "<group>"; };
+		C3930FBC2B55722600B018EF /* LiveSectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveSectionVC.xib; sourceTree = "<group>"; };
+		C3930FC02B55740F00B018EF /* LiveSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				C3930F932B55470300B018EF /* LinearIndecatorTabBar.swift */,
+				C3930FB22B556E9C00B018EF /* LiveView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -363,11 +376,32 @@
 		C3930F9F2B5551C400B018EF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C3930FBF2B55740000B018EF /* Cell */,
+				C3930FB42B556F5300B018EF /* LiveSection */,
 				C3930FA02B5551D600B018EF /* HomeVC.swift */,
 				C3930FA12B5551D600B018EF /* HomeVC.xib */,
 				C3930FA42B5551E500B018EF /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C3930FB42B556F5300B018EF /* LiveSection */ = {
+			isa = PBXGroup;
+			children = (
+				C3930FB52B556F7700B018EF /* LiveCell.swift */,
+				C3930FB62B556F7700B018EF /* LiveCell.xib */,
+				C3930FBB2B55722600B018EF /* LiveSectionVC.swift */,
+				C3930FBC2B55722600B018EF /* LiveSectionVC.xib */,
+			);
+			path = LiveSection;
+			sourceTree = "<group>";
+		};
+		C3930FBF2B55740000B018EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C3930FC02B55740F00B018EF /* LiveSectionCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +475,8 @@
 				C3930F302B552E8400B018EF /* LaunchScreen.storyboard in Resources */,
 				C3930FA32B5551D600B018EF /* HomeVC.xib in Resources */,
 				C3930F2D2B552E8400B018EF /* Assets.xcassets in Resources */,
+				C3930FBE2B55722600B018EF /* LiveSectionVC.xib in Resources */,
+				C3930FB82B556F7700B018EF /* LiveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +491,7 @@
 				C3930F962B5547DA00B018EF /* MainTabBarVC.swift in Sources */,
 				C3930F722B5542D800B018EF /* UIImage_Ext.swift in Sources */,
 				C3930F842B5542D800B018EF /* MainNavigator.swift in Sources */,
+				C3930FB72B556F7700B018EF /* LiveCell.swift in Sources */,
 				C3930F792B5542D800B018EF /* HTTPClient.swift in Sources */,
 				C3930F772B5542D800B018EF /* AuthRouter.swift in Sources */,
 				C3930F902B5542D800B018EF /* LoginDTO.swift in Sources */,
@@ -466,11 +503,14 @@
 				C3930F782B5542D800B018EF /* AuthClient.swift in Sources */,
 				C3930F892B5542D800B018EF /* Fonts.swift in Sources */,
 				C3930F242B552E8200B018EF /* AppDelegate.swift in Sources */,
+				C3930FBD2B55722600B018EF /* LiveSectionVC.swift in Sources */,
 				C3930F7C2B5542D800B018EF /* NetworkError.swift in Sources */,
 				C3930F7B2B5542D800B018EF /* BaseRouter.swift in Sources */,
+				C3930FC12B55740F00B018EF /* LiveSectionCell.swift in Sources */,
 				C3930F8F2B5542D800B018EF /* DefaultLoginRepo.swift in Sources */,
 				C3930F702B5542D800B018EF /* UITableView_Ext.swift in Sources */,
 				C3930F8E2B5542D800B018EF /* BaseWireFrame.swift in Sources */,
+				C3930FB32B556E9C00B018EF /* LiveView.swift in Sources */,
 				C3930F822B5542D800B018EF /* AppCoordinator.swift in Sources */,
 				C3930FA22B5551D600B018EF /* HomeVC.swift in Sources */,
 				C3930F712B5542D800B018EF /* UICollectionView_Ext.swift in Sources */,

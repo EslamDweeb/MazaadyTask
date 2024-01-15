@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="MazaadyTask" customModuleProvider="target">
             <connections>
+                <outlet property="mainCollectionView" destination="tt5-2I-jsO" id="Pda-5a-0Qv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -71,15 +72,29 @@
                         </stackView>
                     </subviews>
                 </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tt5-2I-jsO">
+                    <rect key="frame" x="0.0" y="121" width="393" height="697"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bhw-s8-YjU">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tt5-2I-jsO" secondAttribute="trailing" id="35L-N2-lL4"/>
                 <constraint firstItem="T6U-Au-yeL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3Vq-Op-0V9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JuT-mf-iPT" secondAttribute="trailing" constant="20" id="DBk-h5-C1a"/>
                 <constraint firstItem="JuT-mf-iPT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nbm-6s-7Mj"/>
+                <constraint firstItem="tt5-2I-jsO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OVe-It-y7B"/>
                 <constraint firstItem="i28-k1-qqb" firstAttribute="leading" secondItem="T6U-Au-yeL" secondAttribute="trailing" constant="8" id="ObD-Ko-yj5"/>
                 <constraint firstItem="i28-k1-qqb" firstAttribute="centerY" secondItem="T6U-Au-yeL" secondAttribute="centerY" id="WvR-W0-uV3"/>
+                <constraint firstItem="tt5-2I-jsO" firstAttribute="top" secondItem="i28-k1-qqb" secondAttribute="bottom" constant="20" id="hQi-wZ-Adu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tt5-2I-jsO" secondAttribute="bottom" id="jat-TQ-Es2"/>
                 <constraint firstItem="T6U-Au-yeL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nmm-ax-zkM"/>
             </constraints>
             <point key="canvasLocation" x="-44" y="29"/>

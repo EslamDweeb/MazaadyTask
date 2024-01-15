@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LiveCell" customModule="MazaadyTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjI-ad-KQj" customClass="LiveView" customModule="MazaadyTask" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="133" height="119"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-og-iy9">
+                                <rect key="frame" x="8" y="8" width="117" height="103"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vvk-og-iy9" firstAttribute="top" secondItem="WjI-ad-KQj" secondAttribute="top" constant="8" id="NQC-u3-T4h"/>
+                            <constraint firstItem="vvk-og-iy9" firstAttribute="leading" secondItem="WjI-ad-KQj" secondAttribute="leading" constant="8" id="kCJ-ii-yzc"/>
+                            <constraint firstAttribute="bottom" secondItem="vvk-og-iy9" secondAttribute="bottom" constant="8" id="y82-wf-5y3"/>
+                            <constraint firstAttribute="trailing" secondItem="vvk-og-iy9" secondAttribute="trailing" constant="8" id="yce-FZ-R1v"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Live Circle" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-2q-wuj">
+                        <rect key="frame" x="117" y="103" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="aK3-rt-bAh"/>
+                            <constraint firstAttribute="width" constant="24" id="zL6-WV-vuW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WjI-ad-KQj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="1KH-2h-IEi"/>
+                <constraint firstAttribute="bottom" secondItem="WjI-ad-KQj" secondAttribute="bottom" constant="4" id="97O-W0-Wta"/>
+                <constraint firstAttribute="trailing" secondItem="WjI-ad-KQj" secondAttribute="trailing" constant="4" id="MIg-1D-tmn"/>
+                <constraint firstItem="WjI-ad-KQj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Onm-Hm-1HU"/>
+                <constraint firstItem="ZeW-2q-wuj" firstAttribute="bottom" secondItem="WjI-ad-KQj" secondAttribute="bottom" constant="4" id="VGl-xa-jCD"/>
+                <constraint firstItem="ZeW-2q-wuj" firstAttribute="trailing" secondItem="WjI-ad-KQj" secondAttribute="trailing" constant="4" id="fGR-jk-eUe"/>
+            </constraints>
+            <size key="customSize" width="141" height="127"/>
+            <point key="canvasLocation" x="150.38167938931298" y="46.83098591549296"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Live Circle" width="26" height="26"/>
+        <image name="image" width="140" height="93"/>
+    </resources>
+</document>
