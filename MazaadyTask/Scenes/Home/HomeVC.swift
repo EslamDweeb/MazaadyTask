@@ -27,6 +27,7 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
     private func setupMainCollectionView(){
         mainCollectionView.register(LiveSectionCell.self, forCellWithReuseIdentifier: LiveSectionCell.getIdentifier())
         mainCollectionView.register(UpComingCousesCell.self, forCellWithReuseIdentifier: UpComingCousesCell.getIdentifier())
+        mainCollectionView.register(CourseSectionCell.self, forCellWithReuseIdentifier: CourseSectionCell.getIdentifier())
         mainCollectionView.registerHeaderFooter(cellClass: UpcomingCourses.self, kind: "Header")
         mainCollectionView.delegate = self
         mainCollectionView.dataSource = self
@@ -61,32 +62,16 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
          ]
           return section
       }
-//     private  func brandSection()-> NSCollectionLayoutSection {
-//         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-//          let item = NSCollectionLayoutItem(layoutSize: itemSize)
-//
-//          let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
-//          let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
-// //         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-//          let section = NSCollectionLayoutSection(group: group)
-//          section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 20, trailing: 20)
-//          section.orthogonalScrollingBehavior = .continuous
-//
-//         section.boundarySupplementaryItems = [
-//          .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)), elementKind: "Header", alignment: .top),
-//         ]
-//          return section
-//      }
-//     func AgentsSection()->NSCollectionLayoutSection {
-//         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1))
-//         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-//         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(60))
-//         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-//         let section = NSCollectionLayoutSection(group: group)
-//         section.contentInsets = .init(top: 0, leading: 16, bottom: 16, trailing: 16)
-//
-//         return section
-//     }
+    private  func courseSection()-> NSCollectionLayoutSection {
+         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+         
+         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(300))
+         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+         
+         let section = NSCollectionLayoutSection(group: group)
+         return section
+     }
     func configureCompositionalLayout(){
         let layout = UICollectionViewCompositionalLayout {sectionIndex,enviroment in
             switch sectionIndex {
@@ -94,8 +79,8 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
                 return self.liveSection()
             case 1:
                 return self.categorySection()
-//            case 2:
-//                return self.brandSection()
+            case 2:
+                return self.courseSection()
             default:
                 return self.liveSection()
             }
@@ -129,7 +114,7 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpComingCousesCell.getIdentifier(), for: indexPath) as! UpComingCousesCell
             return cell
         case 2:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveSectionCell.getIdentifier(), for: indexPath) as! LiveSectionCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseSectionCell.getIdentifier(), for: indexPath) as! CourseSectionCell
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveSectionCell.getIdentifier(), for: indexPath) as! LiveSectionCell
