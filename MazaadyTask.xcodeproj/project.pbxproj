@@ -51,6 +51,13 @@
 		C3930FBD2B55722600B018EF /* LiveSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FBB2B55722600B018EF /* LiveSectionVC.swift */; };
 		C3930FBE2B55722600B018EF /* LiveSectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FBC2B55722600B018EF /* LiveSectionVC.xib */; };
 		C3930FC12B55740F00B018EF /* LiveSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FC02B55740F00B018EF /* LiveSectionCell.swift */; };
+		C3930FC42B557A9300B018EF /* UpcomingCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FC22B557A9300B018EF /* UpcomingCourses.swift */; };
+		C3930FC52B557A9300B018EF /* UpcomingCourses.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FC32B557A9300B018EF /* UpcomingCourses.xib */; };
+		C3930FC92B5580C600B018EF /* CourseCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FC72B5580C600B018EF /* CourseCat.swift */; };
+		C3930FCA2B5580C600B018EF /* CourseCat.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FC82B5580C600B018EF /* CourseCat.xib */; };
+		C3930FCC2B5582B300B018EF /* UpComingCousesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FCB2B5582B300B018EF /* UpComingCousesCell.swift */; };
+		C3930FCF2B5582FB00B018EF /* UPcomingCoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FCD2B5582FB00B018EF /* UPcomingCoursesVC.swift */; };
+		C3930FD02B5582FB00B018EF /* UPcomingCoursesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FCE2B5582FB00B018EF /* UPcomingCoursesVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +109,13 @@
 		C3930FBB2B55722600B018EF /* LiveSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSectionVC.swift; sourceTree = "<group>"; };
 		C3930FBC2B55722600B018EF /* LiveSectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveSectionVC.xib; sourceTree = "<group>"; };
 		C3930FC02B55740F00B018EF /* LiveSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSectionCell.swift; sourceTree = "<group>"; };
+		C3930FC22B557A9300B018EF /* UpcomingCourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCourses.swift; sourceTree = "<group>"; };
+		C3930FC32B557A9300B018EF /* UpcomingCourses.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCourses.xib; sourceTree = "<group>"; };
+		C3930FC72B5580C600B018EF /* CourseCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCat.swift; sourceTree = "<group>"; };
+		C3930FC82B5580C600B018EF /* CourseCat.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCat.xib; sourceTree = "<group>"; };
+		C3930FCB2B5582B300B018EF /* UpComingCousesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingCousesCell.swift; sourceTree = "<group>"; };
+		C3930FCD2B5582FB00B018EF /* UPcomingCoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPcomingCoursesVC.swift; sourceTree = "<group>"; };
+		C3930FCE2B5582FB00B018EF /* UPcomingCoursesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UPcomingCoursesVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				C3930FBF2B55740000B018EF /* Cell */,
+				C3930FC62B55807100B018EF /* UpcomingSection */,
 				C3930FB42B556F5300B018EF /* LiveSection */,
 				C3930FA02B5551D600B018EF /* HomeVC.swift */,
 				C3930FA12B5551D600B018EF /* HomeVC.xib */,
@@ -400,8 +415,22 @@
 			isa = PBXGroup;
 			children = (
 				C3930FC02B55740F00B018EF /* LiveSectionCell.swift */,
+				C3930FC22B557A9300B018EF /* UpcomingCourses.swift */,
+				C3930FC32B557A9300B018EF /* UpcomingCourses.xib */,
+				C3930FCB2B5582B300B018EF /* UpComingCousesCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C3930FC62B55807100B018EF /* UpcomingSection */ = {
+			isa = PBXGroup;
+			children = (
+				C3930FC72B5580C600B018EF /* CourseCat.swift */,
+				C3930FC82B5580C600B018EF /* CourseCat.xib */,
+				C3930FCD2B5582FB00B018EF /* UPcomingCoursesVC.swift */,
+				C3930FCE2B5582FB00B018EF /* UPcomingCoursesVC.xib */,
+			);
+			path = UpcomingSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,11 +501,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3930F7E2B5542D800B018EF /* SplashVC.xib in Resources */,
+				C3930FD02B5582FB00B018EF /* UPcomingCoursesVC.xib in Resources */,
 				C3930F302B552E8400B018EF /* LaunchScreen.storyboard in Resources */,
 				C3930FA32B5551D600B018EF /* HomeVC.xib in Resources */,
 				C3930F2D2B552E8400B018EF /* Assets.xcassets in Resources */,
 				C3930FBE2B55722600B018EF /* LiveSectionVC.xib in Resources */,
 				C3930FB82B556F7700B018EF /* LiveCell.xib in Resources */,
+				C3930FC52B557A9300B018EF /* UpcomingCourses.xib in Resources */,
+				C3930FCA2B5580C600B018EF /* CourseCat.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +522,9 @@
 				C3930F732B5542D800B018EF /* UIviewController_Ext.swift in Sources */,
 				C3930F962B5547DA00B018EF /* MainTabBarVC.swift in Sources */,
 				C3930F722B5542D800B018EF /* UIImage_Ext.swift in Sources */,
+				C3930FCC2B5582B300B018EF /* UpComingCousesCell.swift in Sources */,
 				C3930F842B5542D800B018EF /* MainNavigator.swift in Sources */,
+				C3930FC92B5580C600B018EF /* CourseCat.swift in Sources */,
 				C3930FB72B556F7700B018EF /* LiveCell.swift in Sources */,
 				C3930F792B5542D800B018EF /* HTTPClient.swift in Sources */,
 				C3930F772B5542D800B018EF /* AuthRouter.swift in Sources */,
@@ -505,6 +539,7 @@
 				C3930F242B552E8200B018EF /* AppDelegate.swift in Sources */,
 				C3930FBD2B55722600B018EF /* LiveSectionVC.swift in Sources */,
 				C3930F7C2B5542D800B018EF /* NetworkError.swift in Sources */,
+				C3930FC42B557A9300B018EF /* UpcomingCourses.swift in Sources */,
 				C3930F7B2B5542D800B018EF /* BaseRouter.swift in Sources */,
 				C3930FC12B55740F00B018EF /* LiveSectionCell.swift in Sources */,
 				C3930F8F2B5542D800B018EF /* DefaultLoginRepo.swift in Sources */,
@@ -514,6 +549,7 @@
 				C3930F822B5542D800B018EF /* AppCoordinator.swift in Sources */,
 				C3930FA22B5551D600B018EF /* HomeVC.swift in Sources */,
 				C3930F712B5542D800B018EF /* UICollectionView_Ext.swift in Sources */,
+				C3930FCF2B5582FB00B018EF /* UPcomingCoursesVC.swift in Sources */,
 				C3930F7D2B5542D800B018EF /* SplashVC.swift in Sources */,
 				C3930F7F2B5542D800B018EF /* AuthRepo.swift in Sources */,
 				C3930F802B5542D800B018EF /* Login.swift in Sources */,

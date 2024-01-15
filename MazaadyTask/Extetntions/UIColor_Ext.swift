@@ -11,7 +11,7 @@ extension UIColor {
     static let primry:UIColor = UIColor(hex: "#EC5F5F")
     static let gray1:UIColor = .init(hex: "#303030")
     static let secondary:UIColor = .init(hex: "#FCD034")
-    static let vividOrange:UIColor = .init(hex: "#FF4100")
+    static let gray3:UIColor = .init(hex: "#9D9FA0")
     static let tan:UIColor = .init(hex: "#D49F76")
     static let goldenrod:UIColor = .init(hex: "FFC02F")
     static let ashGray:UIColor = .init(hex: "#B0B0B0")

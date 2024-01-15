@@ -20,6 +20,8 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
     }
     private func setupMainCollectionView(){
         mainCollectionView.register(LiveSectionCell.self, forCellWithReuseIdentifier: LiveSectionCell.getIdentifier())
+        mainCollectionView.register(UpComingCousesCell.self, forCellWithReuseIdentifier: UpComingCousesCell.getIdentifier())
+        mainCollectionView.registerHeaderFooter(cellClass: UpcomingCourses.self, kind: "Header")
         mainCollectionView.delegate = self
         mainCollectionView.dataSource = self
         mainCollectionView.backgroundColor = .white
@@ -43,49 +45,49 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
           
          let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
           let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
-          group.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 20)
+         // group.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 20)
           
           let section = NSCollectionLayoutSection(group: group)
-          section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 0, bottom: 0, trailing: 0)
+         // section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 0, bottom: 0, trailing: 0)
 
          section.boundarySupplementaryItems = [
-          .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100)), elementKind: "Footer", alignment: .bottom),
+          .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(40)), elementKind: "Header", alignment: .top),
          ]
           return section
       }
-     private  func brandSection()-> NSCollectionLayoutSection {
-         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-          let item = NSCollectionLayoutItem(layoutSize: itemSize)
-          
-          let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
-          let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
- //         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-          let section = NSCollectionLayoutSection(group: group)
-          section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 20, trailing: 20)
-          section.orthogonalScrollingBehavior = .continuous
-        
-         section.boundarySupplementaryItems = [
-          .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)), elementKind: "Header", alignment: .top),
-         ]
-          return section
-      }
-     func AgentsSection()->NSCollectionLayoutSection {
-         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1))
-         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(60))
-         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-         let section = NSCollectionLayoutSection(group: group)
-         section.contentInsets = .init(top: 0, leading: 16, bottom: 16, trailing: 16)
-        
-         return section
-     }
+//     private  func brandSection()-> NSCollectionLayoutSection {
+//         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+//          let item = NSCollectionLayoutItem(layoutSize: itemSize)
+//
+//          let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(100))
+//          let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+// //         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+//          let section = NSCollectionLayoutSection(group: group)
+//          section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 20, trailing: 20)
+//          section.orthogonalScrollingBehavior = .continuous
+//
+//         section.boundarySupplementaryItems = [
+//          .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50)), elementKind: "Header", alignment: .top),
+//         ]
+//          return section
+//      }
+//     func AgentsSection()->NSCollectionLayoutSection {
+//         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1))
+//         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+//         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(60))
+//         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+//         let section = NSCollectionLayoutSection(group: group)
+//         section.contentInsets = .init(top: 0, leading: 16, bottom: 16, trailing: 16)
+//
+//         return section
+//     }
     func configureCompositionalLayout(){
         let layout = UICollectionViewCompositionalLayout {sectionIndex,enviroment in
             switch sectionIndex {
             case 0 :
                 return self.liveSection()
-//            case 1:
-//                return self.categorySection()
+            case 1:
+                return self.categorySection()
 //            case 2:
 //                return self.brandSection()
             default:
@@ -118,7 +120,7 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveSectionCell.getIdentifier(), for: indexPath) as! LiveSectionCell
             return cell
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveSectionCell.getIdentifier(), for: indexPath) as! LiveSectionCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpComingCousesCell.getIdentifier(), for: indexPath) as! UpComingCousesCell
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveSectionCell.getIdentifier(), for: indexPath) as! LiveSectionCell
@@ -126,6 +128,15 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource {
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveSectionCell.getIdentifier(), for: indexPath) as! LiveSectionCell
             return cell
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch indexPath.section {
+        case 1:
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UpcomingCourses.getIdentifier(), for: indexPath) as! UpcomingCourses
+            return header
+        default:
+           return UICollectionReusableView()
         }
     }
 }
