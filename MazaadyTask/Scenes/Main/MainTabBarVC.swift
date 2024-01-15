@@ -28,12 +28,14 @@ class MainTabBarVC: UITabBarController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Set the custom tabBar
+       //  Set the custom tabBar
                let customTabBar = LinearIndecatorTabBar()
                setValue(customTabBar, forKey: "tabBar")
         tabBar.tintColor = .primry
         tabBar.unselectedItemTintColor = .lightGray
-       // tabBar.backgroundColor = .darkGray
+        tabBar.isTranslucent = false
+//       // tabBar.backgroundColor = .darkGray
+//        tabBar.selectionIndicatorImage = UIImage(systemName: "rectangle.fill")
         setupTabBar()
     }
     

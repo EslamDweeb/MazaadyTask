@@ -9,8 +9,8 @@ import UIKit
 extension UIColor {
     
     static let primry:UIColor = UIColor(hex: "#EC5F5F")
-    static let midnightBlue:UIColor = .init(hex: "#15151E")
-    static let shamrockGreen:UIColor = .init(hex: "#00A962")
+    static let gray1:UIColor = .init(hex: "#303030")
+    static let secondary:UIColor = .init(hex: "#FCD034")
     static let vividOrange:UIColor = .init(hex: "#FF4100")
     static let tan:UIColor = .init(hex: "#D49F76")
     static let goldenrod:UIColor = .init(hex: "FFC02F")

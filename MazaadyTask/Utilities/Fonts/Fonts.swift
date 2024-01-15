@@ -9,7 +9,8 @@
 import UIKit
 class Fonts {
      enum FontName:String {
-        case Switzer
+       
+        case Poppins
     }
     private enum FontWeight {
         case Regular(String)
