@@ -14,7 +14,8 @@ class MainNavigator:Navigator{
     
     enum Destination {
         case splash
-       
+        case main
+        case home
     }
     
     required init(coordinator: Coordinator) {
@@ -25,6 +26,11 @@ class MainNavigator:Navigator{
         switch destination{
         case .splash:
             return SplashVC(coordinator)
+        case .main:
+            return MainTabBarVC(coordinator: coordinator)
+        case .home:
+            let viewModel = HomeViewModel()
+            return HomeVC(viewModel: viewModel, coordinator: coordinator)
         }
     }
 }

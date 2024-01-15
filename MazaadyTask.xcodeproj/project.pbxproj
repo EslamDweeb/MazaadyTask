@@ -30,7 +30,6 @@
 		C3930F802B5542D800B018EF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F542B5542D800B018EF /* Login.swift */; };
 		C3930F812B5542D800B018EF /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F572B5542D800B018EF /* KeyChainHelper.swift */; };
 		C3930F822B5542D800B018EF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F592B5542D800B018EF /* AppCoordinator.swift */; };
-		C3930F832B5542D800B018EF /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F5A2B5542D800B018EF /* CountryCode.swift */; };
 		C3930F842B5542D800B018EF /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F5C2B5542D800B018EF /* MainNavigator.swift */; };
 		C3930F852B5542D800B018EF /* Switzer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3930F5E2B5542D800B018EF /* Switzer-Bold.otf */; };
 		C3930F862B5542D800B018EF /* Switzer-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3930F5F2B5542D800B018EF /* Switzer-Black.otf */; };
@@ -44,6 +43,14 @@
 		C3930F8E2B5542D800B018EF /* BaseWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F692B5542D800B018EF /* BaseWireFrame.swift */; };
 		C3930F8F2B5542D800B018EF /* DefaultLoginRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F6C2B5542D800B018EF /* DefaultLoginRepo.swift */; };
 		C3930F902B5542D800B018EF /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F6E2B5542D800B018EF /* LoginDTO.swift */; };
+		C3930F942B55470300B018EF /* LinearIndecatorTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F932B55470300B018EF /* LinearIndecatorTabBar.swift */; };
+		C3930F962B5547DA00B018EF /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930F952B5547DA00B018EF /* MainTabBarVC.swift */; };
+		C3930F992B5550BF00B018EF /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = C3930F982B5550BF00B018EF /* MBProgressHUD */; };
+		C3930F9C2B5550F800B018EF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C3930F9B2B5550F800B018EF /* RxCocoa */; };
+		C3930F9E2B5550F800B018EF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C3930F9D2B5550F800B018EF /* RxSwift */; };
+		C3930FA22B5551D600B018EF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FA02B5551D600B018EF /* HomeVC.swift */; };
+		C3930FA32B5551D600B018EF /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3930FA12B5551D600B018EF /* HomeVC.xib */; };
+		C3930FA52B5551E500B018EF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3930FA42B5551E500B018EF /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +79,6 @@
 		C3930F542B5542D800B018EF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C3930F572B5542D800B018EF /* KeyChainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
 		C3930F592B5542D800B018EF /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		C3930F5A2B5542D800B018EF /* CountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
 		C3930F5C2B5542D800B018EF /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		C3930F5E2B5542D800B018EF /* Switzer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Switzer-Bold.otf"; sourceTree = "<group>"; };
 		C3930F5F2B5542D800B018EF /* Switzer-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Switzer-Black.otf"; sourceTree = "<group>"; };
@@ -86,6 +92,11 @@
 		C3930F692B5542D800B018EF /* BaseWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireFrame.swift; sourceTree = "<group>"; };
 		C3930F6C2B5542D800B018EF /* DefaultLoginRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLoginRepo.swift; sourceTree = "<group>"; };
 		C3930F6E2B5542D800B018EF /* LoginDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		C3930F932B55470300B018EF /* LinearIndecatorTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearIndecatorTabBar.swift; sourceTree = "<group>"; };
+		C3930F952B5547DA00B018EF /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		C3930FA02B5551D600B018EF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C3930FA12B5551D600B018EF /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		C3930FA42B5551E500B018EF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3930F9E2B5550F800B018EF /* RxSwift in Frameworks */,
+				C3930F9C2B5550F800B018EF /* RxCocoa in Frameworks */,
+				C3930F992B5550BF00B018EF /* MBProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +132,7 @@
 		C3930F222B552E8200B018EF /* MazaadyTask */ = {
 			isa = PBXGroup;
 			children = (
+				C3930F922B5546F000B018EF /* CustomViews */,
 				C3930F552B5542D800B018EF /* Utilities */,
 				C3930F392B5542D700B018EF /* Extetntions */,
 				C3930F422B5542D700B018EF /* Network */,
@@ -203,6 +218,8 @@
 		C3930F4C2B5542D700B018EF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C3930F9F2B5551C400B018EF /* Home */,
+				C3930F912B55439400B018EF /* Main */,
 				C3930F4D2B5542D700B018EF /* Splash */,
 			);
 			path = Scenes;
@@ -247,7 +264,6 @@
 			children = (
 				C3930F562B5542D800B018EF /* KeyChainHelper */,
 				C3930F582B5542D800B018EF /* AppCoordinator */,
-				C3930F5A2B5542D800B018EF /* CountryCode.swift */,
 				C3930F5B2B5542D800B018EF /* Navigators */,
 				C3930F5D2B5542D800B018EF /* Fonts */,
 				C3930F652B5542D800B018EF /* Protocols */,
@@ -336,6 +352,32 @@
 			path = ModelDTO;
 			sourceTree = "<group>";
 		};
+		C3930F912B55439400B018EF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3930F952B5547DA00B018EF /* MainTabBarVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C3930F922B5546F000B018EF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C3930F932B55470300B018EF /* LinearIndecatorTabBar.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C3930F9F2B5551C400B018EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C3930FA02B5551D600B018EF /* HomeVC.swift */,
+				C3930FA12B5551D600B018EF /* HomeVC.xib */,
+				C3930FA42B5551E500B018EF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,6 +394,11 @@
 			dependencies = (
 			);
 			name = MazaadyTask;
+			packageProductDependencies = (
+				C3930F982B5550BF00B018EF /* MBProgressHUD */,
+				C3930F9B2B5550F800B018EF /* RxCocoa */,
+				C3930F9D2B5550F800B018EF /* RxSwift */,
+			);
 			productName = MazaadyTask;
 			productReference = C3930F202B552E8200B018EF /* MazaadyTask.app */;
 			productType = "com.apple.product-type.application";
@@ -380,6 +427,10 @@
 				Base,
 			);
 			mainGroup = C3930F172B552E8200B018EF;
+			packageReferences = (
+				C3930F972B5550BF00B018EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				C3930F9A2B5550F800B018EF /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = C3930F212B552E8200B018EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,6 +452,7 @@
 				C3930F872B5542D800B018EF /* Switzer-Light.otf in Resources */,
 				C3930F882B5542D800B018EF /* Switzer-Regular.otf in Resources */,
 				C3930F302B552E8400B018EF /* LaunchScreen.storyboard in Resources */,
+				C3930FA32B5551D600B018EF /* HomeVC.xib in Resources */,
 				C3930F2D2B552E8400B018EF /* Assets.xcassets in Resources */,
 				C3930F8A2B5542D800B018EF /* Switzer-Semibold.otf in Resources */,
 			);
@@ -414,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3930F732B5542D800B018EF /* UIviewController_Ext.swift in Sources */,
+				C3930F962B5547DA00B018EF /* MainTabBarVC.swift in Sources */,
 				C3930F722B5542D800B018EF /* UIImage_Ext.swift in Sources */,
 				C3930F842B5542D800B018EF /* MainNavigator.swift in Sources */,
 				C3930F792B5542D800B018EF /* HTTPClient.swift in Sources */,
@@ -425,7 +478,6 @@
 				C3930F752B5542D800B018EF /* String_Ext.swift in Sources */,
 				C3930F8C2B5542D800B018EF /* Coordinator.swift in Sources */,
 				C3930F782B5542D800B018EF /* AuthClient.swift in Sources */,
-				C3930F832B5542D800B018EF /* CountryCode.swift in Sources */,
 				C3930F892B5542D800B018EF /* Fonts.swift in Sources */,
 				C3930F242B552E8200B018EF /* AppDelegate.swift in Sources */,
 				C3930F7C2B5542D800B018EF /* NetworkError.swift in Sources */,
@@ -434,6 +486,7 @@
 				C3930F702B5542D800B018EF /* UITableView_Ext.swift in Sources */,
 				C3930F8E2B5542D800B018EF /* BaseWireFrame.swift in Sources */,
 				C3930F822B5542D800B018EF /* AppCoordinator.swift in Sources */,
+				C3930FA22B5551D600B018EF /* HomeVC.swift in Sources */,
 				C3930F712B5542D800B018EF /* UICollectionView_Ext.swift in Sources */,
 				C3930F7D2B5542D800B018EF /* SplashVC.swift in Sources */,
 				C3930F7F2B5542D800B018EF /* AuthRepo.swift in Sources */,
@@ -441,6 +494,8 @@
 				C3930F6F2B5542D800B018EF /* UITextField_ext.swift in Sources */,
 				C3930F812B5542D800B018EF /* KeyChainHelper.swift in Sources */,
 				C3930F742B5542D800B018EF /* UIView_Ext.swift in Sources */,
+				C3930FA52B5551E500B018EF /* HomeViewModel.swift in Sources */,
+				C3930F942B55470300B018EF /* LinearIndecatorTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +636,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZLT333H937;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MazaadyTask/Info.plist;
+				INFOPLIST_FILE = MazaadyTask/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -608,7 +663,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZLT333H937;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MazaadyTask/Info.plist;
+				INFOPLIST_FILE = MazaadyTask/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -648,6 +703,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3930F972B5550BF00B018EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		C3930F9A2B5550F800B018EF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3930F982B5550BF00B018EF /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3930F972B5550BF00B018EF /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		C3930F9B2B5550F800B018EF /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3930F9A2B5550F800B018EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C3930F9D2B5550F800B018EF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3930F9A2B5550F800B018EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3930F182B552E8200B018EF /* Project object */;
 }

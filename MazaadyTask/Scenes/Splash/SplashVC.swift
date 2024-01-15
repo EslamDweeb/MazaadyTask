@@ -23,16 +23,7 @@ class SplashVC: UIViewController {
         super.viewDidLoad()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             print("Navigate to another screen")
-            Task {[weak self] in
-                guard let self else{return}
-                let result = await self.authRepo.login(email: "kminchelle", password: "0lelplR")
-                switch result {
-                case .success(let success):
-                    print(success)
-                case .failure(let failure):
-                    print(failure.customMessage)
-                }
-            }
+            self.coordinator.main.navigate(to: .main)
         }
     }
 

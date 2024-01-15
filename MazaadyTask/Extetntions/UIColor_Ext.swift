@@ -8,7 +8,7 @@
 import UIKit
 extension UIColor {
     
-    static let darkMidnightBlue:UIColor = .init(hex: "#082753")
+    static let primry:UIColor = UIColor(hex: "#EC5F5F")
     static let midnightBlue:UIColor = .init(hex: "#15151E")
     static let shamrockGreen:UIColor = .init(hex: "#00A962")
     static let vividOrange:UIColor = .init(hex: "#FF4100")
